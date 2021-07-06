@@ -4,7 +4,7 @@
 
 <p align='center'>
 Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
-<sub><em>Now with <a href="http://windicss.netlify.app/">Windi CSS</a>! ⚡️</em></sub>
+<sub><em>Now with <a href="http://windicss.netlify.app/">Quasar CSS</a>! ⚡️</em></sub>
 </p>
 
 <br>
