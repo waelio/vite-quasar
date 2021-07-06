@@ -4,6 +4,5 @@ import { Dark } from 'quasar'
 export const isDark = Dark.isActive
 export const toggleDark = Dark.toggle
 
-
 // export const isDark = useDark()
 // export const toggleDark = useToggle(isDark)
