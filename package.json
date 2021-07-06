@@ -1,6 +1,7 @@
 {
   "name": "vite-quasar",
   "description": "vite quasar ui template",
+  "version": "0.1.0",
   "author": {
     "name": "Waelio",
     "email": "wahbehw@gmail.com",
