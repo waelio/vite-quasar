@@ -15,7 +15,11 @@ import LinkAttributes from 'markdown-it-link-attributes'
 export default defineConfig({
   resolve: {
     alias: {
-      '~/': `${path.resolve(__dirname, 'src')}/`,
+      '~/': `${path.resolve(__dirname, '')}/`,
+      'src/': `${path.resolve(__dirname, 'src')}/`,
+      'store/': `${path.resolve(__dirname, 'src/store')}/`,
+      'components/': `${path.resolve(__dirname, 'src/components')}/`,
+      'pages/': `${path.resolve(__dirname, 'src/pages')}/`,
     },
   },
   plugins: [
@@ -118,6 +122,8 @@ export default defineConfig({
     ],
     exclude: [
       'vue-demi',
+      '@quasar/app',
+      'quasar',
     ],
   },
 })

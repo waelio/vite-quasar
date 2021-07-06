@@ -3,15 +3,13 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 
+const { t } = useI18n()
 const name = ref('')
-
 const router = useRouter()
 const go = () => {
   if (name.value)
     router.push(`/hi/${encodeURIComponent(name.value)}`)
 }
-
-const { t } = useI18n()
 </script>
 
 <template>
@@ -28,25 +26,21 @@ const { t } = useI18n()
       <em class="text-sm opacity-75">{{ t('intro.desc') }}</em>
     </p>
 
-    <div class="q-py-4" />
-
     <q-input
       id="input"
       v-model="name"
       :placeholder="t('intro.whats-your-name')"
       :label="t('intro.whats-your-name')"
       :aria-label="t('intro.whats-your-name')"
-      type="text"
       autocomplete="false"
       class="q-px-md q-py-md q-mx-auto"
-      style="width:250px;"
-      outline="none active:none"
+      style="width:250px"
       @keydown.enter="go"
     />
 
     <div>
       <q-btn
-        dense
+        glossy
         :color=" name ? 'green' : 'warning'"
         :disabled="!name"
         :label="t('button.go')"

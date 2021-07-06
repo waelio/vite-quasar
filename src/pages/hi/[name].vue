@@ -1,8 +1,14 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+import { defineProps } from 'vue'
 
-const props = defineProps<{ name: string }>()
+const props = defineProps({
+  name: {
+    type: String,
+    required: true,
+  },
+})
 const router = useRouter()
 const { t } = useI18n()
 </script>
