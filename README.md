@@ -1,5 +1,5 @@
 <p align='center'>
-  <img src='https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
+  <img src='https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png' alt='Vite-quasar - Opinionated Vite Starter Template' width='600'/>
 </p>
 
 <p align='center'>
@@ -27,7 +27,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
-- 🎨 [Windi CSS](https://github.com/windicss/windicss) - next generation utility-first CSS framework
+- 🎨 [Quasar UI](https://github.com/quasarframework/quasar) - Build high-performance VueJS user interfaces in record time: responsive Single Page Apps, SSR Apps, PWAs, Browser extensions, Hybrid Mobile Apps and Electron Apps. If you want, all using the same codebase!
 
 - 😃 [Use icons from any icon sets, with no compromise](./src/components)
 
@@ -49,8 +49,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 ### UI Frameworks
 
-- [Windi CSS](https://github.com/windicss/windicss) (On-demand [TailwindCSS](https://tailwindcss.com/)) - lighter and faster, with a bunch of additional features!
-  - [Windi CSS Typography](https://windicss.org/plugins/official/typography.html)
+- [Quasar CSS](https://github.com/windicss/windicss) Quasar is the number one solution based on Vue whether you’re only building a desktop website, a desktop app, a mobile app, or even all of them.
 
 ### Icons
 
@@ -105,15 +104,15 @@ As this template is strongly opinionated, the following provides a curated list 
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/antfu/vitesse/generate).
+[Create a repo from this template on GitHub](https://github.com/waelio/vite-quasar/generate).
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit antfu/vitesse my-vitesse-app
-cd my-vitesse-app
+npx degit waelio/vite-quasar vite-quasar-app
+cd vite-quasar-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
 
