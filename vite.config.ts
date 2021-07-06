@@ -6,7 +6,6 @@ import Layouts from 'vite-plugin-vue-layouts'
 import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons'
 import ViteComponents from 'vite-plugin-components'
 import Markdown from 'vite-plugin-md'
-import WindiCSS from 'vite-plugin-windicss'
 import { VitePWA } from 'vite-plugin-pwa'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Prism from 'markdown-it-prism'
@@ -34,7 +33,7 @@ export default defineConfig({
 
     // https://github.com/antfu/vite-plugin-md
     Markdown({
-      wrapperClasses: 'prose prose-sm m-auto text-left',
+      wrapperClasses: 'q-page q-mx-auto padding',
       headEnabled: true,
       markdownItSetup(md) {
         // https://prismjs.com/
@@ -64,19 +63,13 @@ export default defineConfig({
         // https://github.com/antfu/vite-plugin-icons
         ViteIconsResolver({
           componentPrefix: '',
-          // enabledCollections: ['carbon']
+          enabledCollections: ['carbon'],
         }),
       ],
     }),
 
     // https://github.com/antfu/vite-plugin-icons
     ViteIcons(),
-
-    // https://github.com/antfu/vite-plugin-windicss
-    WindiCSS({
-      safelist: 'prose prose-sm m-auto text-left',
-    }),
-
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({
       registerType: 'autoUpdate',

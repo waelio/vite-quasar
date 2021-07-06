@@ -9,7 +9,7 @@ const { t } = useI18n()
 
 <template>
   <div>
-    <p class="text-4xl">
+    <p class="text-h2">
       <carbon-pedestrian class="inline-block" />
     </p>
     <p>
@@ -20,12 +20,12 @@ const { t } = useI18n()
     </p>
 
     <div>
-      <button
-        class="btn m-3 text-sm mt-8"
+      <q-btn
+        class="q-ma-md text-sm q-mt-sm"
+        :label="t('button.back')"
+        color="primary"
         @click="router.back()"
-      >
-        {{ t('button.back') }}
-      </button>
+      />
     </div>
   </div>
 </template>
